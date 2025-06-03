@@ -4,6 +4,12 @@ import './index.css'
 import App from './App.tsx'
 import 'preline'
 
+import 'preline'
+
+window.addEventListener('load', () => {
+  window.HSStaticMethods?.autoInit?.()
+})
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
