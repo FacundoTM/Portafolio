@@ -76,7 +76,7 @@ function Navbar() {
                 Proyectos
               </a>
 
-              <div className="hs-dropdown [--trigger:hover] relative inline-flex">
+              <div className="hs-dropdown relative inline-flex">
                 <button
                   id="hs-dropdown-hover-event"
                   type="button"
