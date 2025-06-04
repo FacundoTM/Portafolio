@@ -12,7 +12,7 @@ function Projects() {
           Listado de proyectos junto con las{" "}
           <span className="text-[#ff0]">tecnologias</span> utilizadas.
         </p>
-        <div className="pt-15 grid grid-cols-4 gap-4">
+        <div className="pt-15 grid-cols-2 grid md:grid-cols-4 gap-4 px-4">
           <Card />
         </div>
       </RevealOnScroll>

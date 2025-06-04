@@ -40,7 +40,7 @@ export default function Contact() {
   });
 
   return (
-    <div className=" flex items-center justify-center">
+    <div className=" flex items-center justify-center py-5">
       <div className="grid w-2/4">
         <div className="py-15">
           <Toaster position="bottom-center" richColors />
