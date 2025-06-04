@@ -4,9 +4,18 @@ import "./index.css";
 import App from "./App.tsx";
 import "preline";
 
+declare global {
+  interface Window {
+    HS?: {
+      init?: () => void;
+      [key: string]: any;
+    };
+  }
+}
+
 useEffect(() => {
-  window.addEventListener("load", () => {
-    window.HSStaticMethods?.autoInit?.();
+  document.addEventListener("DOMContentLoaded", function () {
+    window.HS?.init?.();
   });
 }, []);
 
