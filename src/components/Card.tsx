@@ -20,7 +20,7 @@ const content = [
     descripcion:
       "Pagina web que guardará todas las notas que desees. Creado con React y LocalStorage.",
     imagen: "https://i.imgur.com/87zK76o.jpeg",
-    link: "https://facundotm.github.io/ListaDeTareas/",
+    link: "https://app-notas-theta.vercel.app/",
     id: 1,
   },
   {
