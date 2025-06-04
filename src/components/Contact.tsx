@@ -4,10 +4,22 @@ import { Toaster, toast } from "sonner";
 
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
+import { useEffect } from "react";
 
 ("use client");
 
 export default function Contact() {
+  useEffect(() => {
+    // Espera a que el script de Preline esté disponible y luego inicializa
+    if (
+      typeof window !== "undefined" &&
+      window.HSStaticMethods &&
+      typeof window.HSStaticMethods.autoInit === "function"
+    ) {
+      window.HSStaticMethods.autoInit();
+    }
+  }, []);
+
   const SERVICE_ID = "service_4pxpp5b";
   const TEMPLATE_ID = "template_tf79odq";
   const PUBLIC_KEY = "vxMYMfRyECZxCCW4j";
